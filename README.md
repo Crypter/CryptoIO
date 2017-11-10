@@ -8,7 +8,7 @@ What this library can do:
 * servoWrite (servo control signal)
 * LEDWrite (Delta-Sigma PWM, exponentialy scalled for realistic LED light output - 127 really looks like half the light of 255)
 
-..and all of that on DMA using timed interupts for precission. That means the CPU is mostly free for other uses.
+...and all of that on DMA using timed interupts for precission. That means the CPU is mostly free for other uses.
 
 You have sinceTimer and resetTimer functions inbuild for easier timing manipulation.
 
