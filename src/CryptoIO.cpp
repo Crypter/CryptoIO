@@ -99,7 +99,7 @@ void CryptoIO::run()
       else if (pin_mode[i]==CRYPTOIO_SERVO)
       {
         pin_counter[i]++;
-        pin_counter[i]%=(operating_frequency/100);
+        pin_counter[i]%=(operating_frequency/50);
         if (pin_counter[i]<pin_value[i]) set_bit(i, 1);
         else set_bit(i, 0);
       }
