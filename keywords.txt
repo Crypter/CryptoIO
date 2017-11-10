@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For ArduinoSound
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+CryptoIO	KEYWORD2
+digitalWrite	KEYWORD2
+analogWrite	KEYWORD2
+DSWrite		KEYWORD2
+servoWrite	KEYWORD2
+LEDWrite	KEYWORD2
+begin		KEYWORD2
+init		KEYWORD2
+sinceTimer	KEYWORD2
+resetTimer	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
