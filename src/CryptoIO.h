@@ -22,21 +22,21 @@ class CryptoIO
   CryptoIO();
   static void init(uint32_t frequency, uint8_t pins);
   static void begin(uint32_t frequency, uint8_t pins);
-  static uint8_t digitalWrite(uint8_t pin, uint8_t value);
-  static uint8_t analogWrite(uint8_t pin, uint8_t value);
-  static uint8_t DSWrite(uint8_t pin, uint8_t value); //first order DeltaSigma
-  static uint8_t servoWrite(uint8_t pin, uint8_t value);
-  static uint8_t LEDWrite(uint8_t pin, uint8_t value);
+  static void digitalWrite(uint8_t pin, uint8_t value);
+  static void analogWrite(uint8_t pin, uint8_t value);
+  static void DSWrite(uint8_t pin, uint8_t value); //first order DeltaSigma
+  static void servoWrite(uint8_t pin, uint8_t value);
+  static void LEDWrite(uint8_t pin, uint8_t value);
+  static uint8_t getValue(uint8_t pin);
+  static uint8_t getMode(uint8_t pin);
   static void run();
   
   private:
   static uint8_t linear_brightness_curve[256];
-  static os_timer_t timer;
+ 
   static void timer_call(void *arguments);
-  
-  static uint8_t set_bit(uint8_t pin, uint8_t value);
-  static uint8_t get_bit(uint8_t pin);
-  
+  static os_timer_t timer;  
+
   static uint8_t pin_mode[32];
   static uint32_t pin_value[32];
   static uint32_t pin_counter[32];
