@@ -135,7 +135,7 @@ void CryptoIO::begin(uint32_t frequency, uint8_t pins)
   i2s_begin();
   i2s_set_rate(frequency);
   os_timer_setfn(&timer, CryptoIO::timer_call, NULL);
-  os_timer_arm(&timer, 1, true);
+  os_timer_arm(&timer, 3, true);
 }
 
 uint8_t CryptoIO::digitalWrite(uint8_t pin, uint8_t value)
