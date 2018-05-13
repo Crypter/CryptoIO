@@ -58,7 +58,7 @@ void CryptoIO::timer_call(void *arguments)
 
 void ICACHE_RAM_ATTR CryptoIO::run()
 {
-  if (i2s_available() >= 900)
+  if (i2s_available())
   while (!i2s_is_full())
   {
     for (int i=0; i<pin_count; i++)
